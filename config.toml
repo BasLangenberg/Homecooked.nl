@@ -1,0 +1,20 @@
+baseURL = "https://www.homecooked.nl"
+languageCode = "en-us"
+title = "Homecooked.nl - Bas Langenberg"
+theme = "hugo-kiera"
+
+pygmentsCodeFences = true
+
+googleAnalytics = "99749504" #Google Analytics ID
+
+[author]
+    name = "Bas Langenberg"       #Author name
+    github = "BasLangenberg"     #Github username
+    gitlab = ""     #Gitlab username
+    linkedin = "sjmlangenberg"   #LinkedIn username
+    facebook = ""   #Facebook username
+    twitter = "@BasLangenberg"    #Twitter username
+    instagram = ""  #Instagram username
+
+[params]
+    tagline = "Cooking up some nice code today..."
