@@ -1,7 +1,6 @@
 ---
 title: "Move to Hugo"
 date: 2018-10-20T19:02:32+02:00
-draft: true
 ---
 
 We're moving!
@@ -19,5 +18,21 @@ Stuff I think is improved in comparison to the old site:
  - Flat files are still the best way to blog for me
  - Everything *Still* in Git!
  - Pushing a new version of the website is now being done locally on my laptop, which gives me more control of the process and does not require me to rely on Github
+
+Pushing updates is also not really hard. I create a new blog with the following command:
+
+```
+hugo new posts/move-to-hugo.md
+hugo server -D
+```
+
+After which I edit markdown as usual while my local debug server is running and I can check stuff looks like I want it to look.
+
+Then I build and push my changes.
+
+```
+hugo
+scp -i ~/.ssh/mykey -r public/* bas@homecooked.nl:/path/to/webroot 
+```
 
 If people are looking for some easy way to setup a blog, I would recommend Hugo. I still don't know a lot about it, which I think is really nice since it points out how easy it is to start using it.
