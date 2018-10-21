@@ -173,8 +173,6 @@ CONTAINER ID        IMAGE                                       COMMAND         
 
 I was immediately able to connect using SQL Developer
 
-<img src="../img/dockerconnect.png" width="1000">
-
 Note that Enterprise Manager Express also worked out of the box but i was unable to use it. All three of my browsers complained I had no flash installed. Didn't bother to investigate the issue.
 
 With this article as a reference, I will be able to setup an Oracle development environment on DigitalOcean in ~15 minutes, which is the fastest option I have in my tool belt today. Pretty impressive and straight forward!
