@@ -1,6 +1,6 @@
 ---
 date: 2015-08-14T19:02:32+02:00
-tile: So what I've been up to
+title: "So what I've been up to"
 ---
 
 Long time no blogging. This is probably not the last time this will happen. I tend to be 'busy'. Also, I only blog when I feel like and when I think I have something to talk about. I just try and post an update on what I have been working. Hell, maybe someone get's some inspiration out of this!

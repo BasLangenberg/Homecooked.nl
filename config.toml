@@ -1,7 +1,7 @@
 baseURL = "https://www.homecooked.nl"
 languageCode = "en-us"
 title = "Homecooked.nl - Bas Langenberg"
-theme = "hugo-kiera"
+theme = "kiera"
 
 pygmentsCodeFences = true
 
