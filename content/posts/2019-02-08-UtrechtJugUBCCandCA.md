@@ -3,11 +3,12 @@ title = "Two days with Uncle Bob, Robert C Martin @ Rabobank / Java User Group U
 date = 2019-02-01T00:00:00+00:00
 tags = []
 categories = []
+draft = true
 +++
 
 # Introduction
 
-Although I have never read "Clean Code", by Robert "Uncle Bob" Martin, it's known as one of the books you have to read if you want to grow as a developer. Writing code that's running is one thing, making sure it is understandable and maintainable by yourself and other developers in your team is essential to deliver business requirements in a timely fasion.
+Although I have never read "Clean Code", by Robert "Uncle Bob" Martin, it's known as one of the books you have to read if you want to grow as a developer. Writing code that's doing it's job is one thing, making sure it is understandable and maintainable by yourself and other developers in your team is essential to keep the ability to deliver business requirements in a timely fasion.
 
 It did not take me long to sign up after I saw Java Usergroup Utrecht, together with my old customer Rabobank, posting 2 meetups with Uncle Bob. One is about Clean Code, the other one is about Clean Architecture. After I was confirmed, I checked with my employer, who thought it was no problem at all to attend. Normally I do this the other way around, but I reckoned this would sell out really quickly. Turned out I was right. There were 400 slots for each day, with a big waitlist eager to jump in if someone could not make it.
 
@@ -36,24 +37,28 @@ The idea behind these stories is that you should see your programmer job as a cr
 
 And I tend to agree with this statement.
 
-Writing Clean Code is hard and noone does it the first time. It takes roughly the same amount of time after writing working code to clean it up. The problem here is the definition of done. Is code done when you have the code working, or is code done when it is working and it is clean?
+Writing Clean Code is hard and no one does it perfectly the first time writing it. It takes roughly the same amount of time after writing working code to clean it up. The problem here is the definition of done. Is code done when you have the code working, or is code done when it is working and it is clean?
 
 After showing us some code which was not very clean, and how he ultimately ended up refactoring it, there were a bunch of lessons learned on which he elaborated. These I found the most interesting.
 
-- Don't repeat yourself. A common pattern on avoiding duplicate code;
-- Every line of a function should be on the same 'level'. It is considered rude to have a low lever String function next to a high level concept you implemented yourself;
+- Don't repeat yourself. A common pattern for avoiding duplicate code;
+- Every line of a function should be on the same 'level'. It is considered rude to have a low lever String function next to a higher level concept you implemented yourself;
 - Soft rule: Maximum of three arguments per function;
 - Do not pass a boolean as a arguments value;
-- Make classes easy to extend and avoid modifying them; (Open-Close in SOLID)
+- Make classes easy to extend and avoid modifying them; (Open-Closed in SOLID)
 - Make sure functions do not cause side effects in your program;
 - Comments only as a last resort. They should be treated as a failure. You were unable to express the comment clearly in your code;
   - Although some comments are acceptable!
 - Function names should be smaller if their scope is big;
 - ... And variable names should be smaller if their scope is small!;
 
+This was a very meaty session. I definitely need to look at more examples to master this.
+
 ## Break-out session: My, my code and I by Rosanne Joosten
 
-An interesting talk of which I hope I can find the slides later. I enjoyed it so well I forgot to make notes. The gist of the presentation was that certain style of coding is a pointer to personality traits a person has. I hope to find the slides online so I can link them here. A real treat!
+An interesting talk. I enjoyed it so well I forgot to make notes. The gist of the presentation was that certain style of coding is a pointer to personality traits a person has. It was a real treat, and I found a recording of this talk on JFall online.
+
+https://www.youtube.com/watch?v=CKqSLEbTkNk&t=3s
 
 ## Are you a professional
 
@@ -61,30 +66,30 @@ After the break out, Uncle Bob came back and gave us more. Coming back to the st
 
 - Schools prepare kids terribly for the job market;
 - Ethics are important but lacking in our profession;
-- The amount of programmers is doubled every 5 years
-  - 50% of the programmers therefore has less than 5 years of experience
+- The amount of programmers is doubled every 5 years;
+  - 50% of the programmers therefore has less than 5 years of experience;
 
 Robert pretended to be our new CTO. He atmitted he would do a terrible job at administration, but he would lay the following standards upon us.
 
 - ***We will not ship shit***
-- We will always be ready
-  - Technically ready, so we should always be able to deploy to prod. If the business is not ready, that's a different cookie.
-- Stable productivity
-- Inexpensive adaptability
-  - Making changes should be easy
-- Continuous Improvement
-- Fearless Competence
-  - Boy scout rule: Leave everything a bit cleaner than you found it
-  - Tests, Write tests. Then write some more tests.
-- Extreme quality
-- QA will find nothing
-- Automated!
-- No fragilities
-- We cover for eachother
-- Honest estimates
-- You say no
-  - Tell if something is not possible, and stick with it
-  - If they ask you to try anyway, tell then you already did and you failed
+- We will always be ready;
+  - Technically ready, so we should always be able to deploy to prod. If the business is not ready, that's a different cookie.;
+- Stable productivity;
+- Inexpensive adaptability;
+  - Making changes should be easy;
+- Continuous Improvement;
+- Fearless Competence;
+  - Boy scout rule: Leave everything a bit cleaner than you found it;
+  - Tests, Write tests. Then write some more tests.;
+- Extreme quality;
+- QA will find nothing;
+- Automated!;
+- No fragilities;
+- We cover for eachother;
+- Honest estimates;
+- You say no;
+  - Tell if something is not possible, and stick with it;
+  - If they ask you to try anyway, tell then you already did and you failed;
 
 ## The three laws of Test Driven Development
 
@@ -96,19 +101,19 @@ Uncle Bob jumped right in and presented us with his 3 laws:
 
 The arguments made for testing were made after this.
 
-- Test are documentation about how you code works
-- Tests written before the implementation is done will make your code easy to test
-- Tests before gives you confidence your code will work
-- Tests makes your code decoupled
-- Tests reduces debug time
-  - The code you wrote is written a few minutes ago if you practice TDD. So you are completely aware of what you are trying to do
+- Test are documentation about how you code works;
+- Tests written before the implementation is done will make your code easy to test;
+- Tests before gives you confidence your code will work;
+- Tests makes your code decoupled;
+- Tests reduces debug time;
+  - The code you wrote is written a few minutes ago if you practice TDD. So you are completely aware of what you are trying to do;
 
 Consideration to note:
 
-- Tests for gui's are hard to write
-  - Make sure you remove all logic from the gui so you can test in the backend
-- Accountants are using this strategy for a long time already. People are forced by law to enter every transaction twice. Once as an asset and once as a liability. When comparing these two, the resulting value should always be zero.
-- TDD takes practice before you take it to work. A few months of experimentation during your lunch break is neccesary to get the patterns and confidence needed to use it in production work.
+- Tests for gui's are hard to write;
+  - Make sure you remove all logic from the gui so you can test in the backend;
+- Accountants are using this strategy for a long time already. People are forced by law to enter every transaction twice. Once as an asset and once as a liability. When comparing these two, the resulting value should always be zero.;
+- TDD takes practice before you take it to work. A few months of experimentation during your lunch break is neccesary to get the patterns and confidence needed to use it in production work.;
 
 After a really interesting day one, I went home inspired, but tired.
 
@@ -132,9 +137,11 @@ The day I was most excited for was this day. I am an aspiring architect for a lo
 
 ## Architecture: The Real Software Crisis
 
+Uncle Bob combined this talk with the talk that should come next. Keep on reading!
+
 ## Clean Architecture & Design
 
-This was the most interesting session of the two days. It's not a secret I aspire to become a solution architect someday, and that day better be sooner than later. Starting with this slogan "It's not about the technology, it's about the people", uncle Bob took us on a trip down common architectural patterns. Starting by Stating that every developer should involve himself in architecture, I know I am on the correct path to my current carreer goal.
+This was the most interesting session of the two days. It's not a secret for anyone whom I talked about my career dreams for a few minutes that I aspire to become a solution architect someday, and that day better be sooner than later. Starting with his famous slogan "It's not about the technology, it's about the people", uncle Bob took us on a trip down common architectural patterns. Starting by Stating that every developer should involve himself in architecture, I know I am on the correct path to my current carreer goal.
 
 Architecture is something that is alive. If you place it within the big Agile picture as you should, it is the same thing as code. It constantly changes and adapts. Architecture is a living thing. You cannot make it up beforehand, it evolve with the system it tries to describe. Magic happens when software is right, be it clean code or a correct architecture. Effort to maintain or adapt is minimized. Functionality and flexibility are maximized. Software design and architecture are the same thing.
 
@@ -144,7 +151,7 @@ Architecture:
 - If effort done to improve the system is always the same or decreases, this means there is good architecture;
 - If effort done to improve the system is inceasing, this means there is ***bad*** architecture;
 
-You can recognize bad architecture if more people are thrown at the problems at hand. Make a mess and fail because your product is not maintainable. Decline in productivity when the mess builds. Clean code and clean architecture are very important to succeed.
+You can recognize bad architecture if more resources in the form of more staff are thrown at the problems at hand. Make a mess and fail because your product is not maintainable. Decline in productivity when the mess builds. Clean code and clean architecture are very important to succeed.
 
 Having clean architecture means you should have diciplines into place which make sure your quality is top notch. Diciplines make you feel like you are working slow. Make sure you do not link your self worth to your speed, that's not fair to yourself.
 
@@ -155,7 +162,7 @@ It boils down to two rules:
 
 Only after these two things are done, your job is done.
 
-Stakeholder might want changes faster then you are able to execute rule one and two. When you run into this problem / discussion, remind yourself that stakeholders have ***NO SAY*** about the architecture. Also, senior people, learn how to deal with people.
+Stakeholder might want changes faster than you are able to execute rule one and two. When you run into this problem / discussion, remind yourself that stakeholders have ***NO SAY*** about the architecture. Also, senior people, learn how to deal with people and not only how to write code.
 
 Also remind yourself you are a stakeholder as well. Your salary, self worth, and good name as a programmer depends on the quality of the work you do.
 
@@ -163,7 +170,7 @@ Also, make sure to understand that architecture is decoupled from the frameworks
 
 Within good architecture, boundaries are set. Frameworks should be decoupled from your business logic, database engines should be decoupled from your business logic. The web is just one big I/O device and should therefore be decoupled from your business logic.
 
-<<<< INSERT PICTURE HERE>>>>
+https://s14-eu5.startpage.com/cgi-bin/serveimage?url=https:%2F%2Fcdn-images-1.medium.com%2Fmax%2F719%2F1*ZNT5apOxDzGrTKUJQAIcvg.png&sp=6871ff053ea20fb624a6771d8c497af3
 
 Make sure all the lines point to your business logic, this is the most important. Making sure your business logic is in the center is making sure your code can be properly tested.
 
@@ -207,7 +214,7 @@ Uncle bob combined the last two talks of the day into one. It was mostly about a
     - Will slow down the people which were already in the team;
     - You cannot predict the outcome;
     - *** Most of the time, this is not an option ***
-  - Quality
+  - Quality;
     - "The only way to go fast is to go well";
     - Quality is the only way to go fast;
     - This is never an option to cut;
@@ -219,7 +226,7 @@ Agile is getting the bad news as early as possible. Relative estimates are bette
 
 One last thing about story points and burn downs: If the story points go up, the team is being pressured in getting more work done. If the story points are going down, the application is getting a mess and gets more unmaintainable.
 
-I rather had this talk be another top notch talk about architecture, like in the morning.
+I rather had this talk be another top notch talk about architecture, like in the morning. I knew my way around Agile already.
 
 # Take-aways, things I like to spend some time investigating
 
@@ -231,8 +238,8 @@ The first two are pretty clear:
 After this, I will:
 
 - Become better at Java
-  - Do Kata's
-  - Write apps
+  - Practice practices by doing code kata's
+  - Write apps, the only way to learn is by doing
   - Read Effective Java, 3rd edition (This one was already on the list)
 
 I think I will focus on this for the rest of 2019.
