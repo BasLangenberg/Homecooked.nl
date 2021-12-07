@@ -1,6 +1,7 @@
 +++
 title = "Designing Azure topologies for scale and security"
 date = 2021-10-16T00:00:00+00:00
+draft = true
 tags = []
 categories = []
 +++

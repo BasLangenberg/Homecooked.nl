@@ -1,13 +1,13 @@
 +++
 title = "KubeCon / Cloud Native Con Europe 2021"
-date = 2021-10-16T00:00:00+00:00
+date = 2021-12-07T00:00:00+00:00
 tags = []
 categories = []
 +++
 
 I went to Virtual KubeCon EU, almost 2 weeks ago. I wrote down some notes, and thought it might be interesting to share them on my blog to wake it up from it's slumber.
 
-**UPDATE 14/10/2021**: I realise this blogpost is not really coherent, as it came forth from my note taking during the event. I cleaned it up a bit, and I want to publish this, but it is not as polished as I would like. The event is too long ago to recall everything properly, so I decided to spend time on writing new content instead of making this one really great.
+**UPDATE 07/12/2021**: I realise this blogpost is not really coherent, as it came forth from my note taking during the event. I cleaned it up a bit, and I want to publish this, but it is not as polished as I would like. The event is too long ago to recall everything properly, so I decided to spend time on writing new content instead of making this one really great.
 
 Also, realizing I'm typing this just after Kubecon NA is funny to me. I didn't really pick up any talks from that event.
 
