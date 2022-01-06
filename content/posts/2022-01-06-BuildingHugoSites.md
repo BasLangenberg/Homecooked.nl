@@ -1,6 +1,6 @@
 +++
 title = "Automatically deploy your Hugo website using Github actions"
-date = 2022-01-06T20:00:00+00:00
+date = 2022-01-06T06:00:00+00:00
 tags = []
 categories = []
 +++
