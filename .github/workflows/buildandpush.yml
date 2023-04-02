@@ -11,7 +11,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
           - name: 'Checkout GitHub Action'
-            uses: actions/checkout@master
+            uses: actions/checkout@main
 
           - name: 'Login to GitHub Container Registry'
             uses: docker/login-action@v1
@@ -22,6 +22,7 @@ jobs:
 
           - name: 'Build Inventory Image'
             run: |
+              ls -latrh .
               docker build . --tag ghcr.io/baslangenberg/homecooked:latest
               docker push ghcr.io/baslangenberg/homecooked:latest
 
