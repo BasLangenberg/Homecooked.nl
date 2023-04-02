@@ -22,6 +22,6 @@ jobs:
 
           - name: 'Build Inventory Image'
             run: |
-              docker build . --tag ghcr.io/BasLangenberg/homecooked:latest
-              docker push ghcr.io/BasLangenberg/homecooked:latest
+              docker build . --tag ghcr.io/baslangenberg/homecooked:latest
+              docker push ghcr.io/baslangenberg/homecooked:latest
 
