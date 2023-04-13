@@ -1,6 +1,6 @@
 +++
 title = "A new home for Homecooked.nl"
-date = 2022-01-09T19:00:00+00:00
+date = 2023-01-09T19:00:00+00:00
 tags = []
 categories = []
 +++
