@@ -1,6 +1,6 @@
 +++
 title = "Weird docker issues"
-date = 2023-08-20:00:00+00:00
+date = 2023-08-20T:00:00+00:00
 tags = []
 categories = []
 +++
