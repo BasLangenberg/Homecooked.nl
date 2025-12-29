@@ -60,12 +60,12 @@ params:
     Content: Welcome to my blog, I write here about things that I want to record for later reference. Mostly for myself, but you are more than welcome to read along. For more information about me, please see the [about](/about) page
 
   socialIcons:
-    - name: x
-      url: "https://x.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/BasLangenberg"
+    - name: mastodon
+      url: "https://toot.community/@CommissarBas"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/sjmlangenberg"
 
   analytics:
     google:
