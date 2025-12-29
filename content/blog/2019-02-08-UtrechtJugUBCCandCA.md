@@ -20,13 +20,13 @@ I was running late, but fortunately I made it before the first talk. The agenda 
 
 ## Agenda of day 1
 
-09.00 Opening</br>
-09.15 Clean Code I</br>
-11.00 Clean Code II</br>
-12.30 Lunch</br>
-13.30 Break-out sessions</br>
-14.15 Are You a Professional?</br>
-15.30 3 laws of Test Driven Development</br>
+09.00 Opening\
+09.15 Clean Code I\
+11.00 Clean Code II\
+12.30 Lunch\
+13.30 Break-out sessions\
+14.15 Are You a Professional?\
+15.30 3 laws of Test Driven Development\
 17.00 Drinks
 
 ## Clean Code I and II
@@ -123,16 +123,16 @@ The day I was most excited for was this day. I am an aspiring architect for a lo
 
 ## Agenda of day 2
 
-09.00 Opening</br>
-09.15 Clean Architecture & Design</br>
-10.15 Architecture: The Real Software Crisis</br>
-11.15 Short break</br>
-11.30 Break-out sessions</br>
-12.15 Lunch</br>
-13.15 Break-out sessions</br>
-14.00 Short break</br>
-14.15 Agility & Architecture</br>
-15.15 Specification Discipline</br>
+09.00 Opening\
+09.15 Clean Architecture & Design\
+10.15 Architecture: The Real Software Crisis\
+11.15 Short break\
+11.30 Break-out sessions\
+12.15 Lunch\
+13.15 Break-out sessions\
+14.00 Short break\
+14.15 Agility & Architecture\
+15.15 Specification Discipline\
 16.00 Drinks
 
 ## Architecture: The Real Software Crisis
